@@ -10,9 +10,8 @@ import Menu from "./pages/Menu";
 function App() {
   return (
     <Router>
-      {/* <main className="container-fluid"> */}
       <Navbar />
-      {/* </main> */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

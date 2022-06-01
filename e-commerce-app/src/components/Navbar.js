@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [collapseMenu, setCollapseMenu] = useState(true);
-  const [isActive, setIsActive] = useState(false);
 
   function handleCollapse() {
     setCollapseMenu(!collapseMenu);
@@ -30,38 +29,29 @@ const Navbar = () => {
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className={`nav-link ${isActive && "active"}`} to={"/"}>
+              <NavLink className={`nav-link`} to={"/"}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
-                className={`nav-link ${isActive && "active"}`}
-                to={"/about"}
-              >
+              <NavLink className={`nav-link`} to={"/about"}>
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${isActive && "active"}`} to={"/menu"}>
+              <NavLink className={`nav-link`} to={"/menu"}>
                 Menu
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
-                className={`nav-link ${isActive && "active"}`}
-                to={"/contactus"}
-              >
+              <NavLink className={`nav-link`} to={"/contactus"}>
                 Contact us
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
-                className={`nav-link ${isActive && "active"}`}
-                to={"/login"}
-              >
+              <NavLink className={`nav-link`} to={"/login"}>
                 Login
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <form className="d-flex">
