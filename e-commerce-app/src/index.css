@@ -1,8 +1,29 @@
-.container {
-  text-align: center;
-  margin: 6rem auto 0;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.btn {
-  margin: 1rem;
+main.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav {
+  padding: 100px;
+}
+
+.logo {
+  color: white;
+  font-size: large;
+}
+
+ul.navbar-nav {
+  margin: auto;
+}
+
+li.nav-item {
+  margin-left: 20px;
 }
