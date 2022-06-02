@@ -1,5 +1,9 @@
 const Menu = () => {
-  return <h1>Menu Page</h1>;
+  return (
+    <section className="section-center">
+      <h1>Menu Page</h1>
+    </section>
+  );
 };
 
 export default Menu;

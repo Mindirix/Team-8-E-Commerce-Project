@@ -8,8 +8,8 @@ const Navbar = () => {
     setCollapseMenu(!collapseMenu);
   }
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div className="container-fluid ">
         <div className="logo">LOGO</div>
         <button
           onClick={handleCollapse}
