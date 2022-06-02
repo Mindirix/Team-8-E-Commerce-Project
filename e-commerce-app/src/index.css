@@ -6,11 +6,18 @@
   box-sizing: border-box;
 }
 
-main.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+/* Global Style */
+section {
+  background-color: #f0f2f5;
+  padding-top: 6rem;
+  height: 100vh;
 }
 
+.section-center {
+  text-align: center;
+}
+
+/* Navbar */
 nav {
   padding: 100px;
 }
@@ -26,4 +33,24 @@ ul.navbar-nav {
 
 li.nav-item {
   margin-left: 20px;
+}
+
+/* Login Page  */
+.login-card {
+  padding-top: 6rem;
+}
+
+.login.container {
+  max-width: 500px;
+  background-color: #fff;
+  box-shadow: 0px 1px 36px -7px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 0px 1px 36px -7px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 1px 36px -7px rgba(0, 0, 0, 0.38);
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.btn-link {
+  padding-top: 0;
+  border-top: 0;
 }
