@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactUs.css" />
+    <script
+      src="https://kit.fontawesome.com/d47ff291f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form action="">
+          <h1>Contact Us</h1>
+          <div class="form-content">
+            <label for="name">Full Name *</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="row">
+            <div class="form-content">
+              <label for="email">Email *</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <div class="form-content">
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter phone Number"
+              />
+            </div>
+          </div>
+          <div class="form-content textarea">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your message here..."
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="submit-btn">
+            <button type="submit" id="submit">
+              Submit <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
