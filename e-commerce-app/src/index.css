@@ -62,7 +62,16 @@ li.nav-item {
   font-size: 1.5rem;
 }
 
+.cart-logo {
+  padding: 8px;
+}
+
 /* Login Page  */
+.login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .login-card {
   padding-top: 6rem;
 }

@@ -1,3 +1,5 @@
+import React from "react";
+
 const Menu = () => {
   return (
     <section className="section-center">

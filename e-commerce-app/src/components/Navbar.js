@@ -57,7 +57,7 @@ const Navbar = () => {
             </ul>
           </NavbarStyle>
           <div className="login-cart">
-            <NavLink to="/cart">
+            <NavLink to="/cart" className="cart-logo">
               <FaShoppingCart />
             </NavLink>
             <NavLink className={`nav-link`} to={"/login"}>
@@ -74,6 +74,7 @@ const NavbarStyle = styled.nav`
   ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-left: 70px;
   }
   a {
     text-transform: capitalize;
