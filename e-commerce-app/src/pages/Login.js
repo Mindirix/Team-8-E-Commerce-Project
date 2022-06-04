@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaGoogle, FaTwitter, FaInstagram } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -89,9 +90,9 @@ const Login = () => {
               <div className="text-center">
                 <p>
                   Not a member?
-                  <button type="button" className="btn btn-link">
+                  <NavLink className={"btn btn-link"} to={"/register"}>
                     Register
-                  </button>
+                  </NavLink>
                 </p>
               </div>
             </form>

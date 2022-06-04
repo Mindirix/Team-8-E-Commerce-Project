@@ -17,22 +17,49 @@ section {
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  nav {
+    padding: 0 60px;
+  }
+}
+
 /* Navbar */
 nav {
-  padding: 100px;
+  padding: 0 200px;
 }
 
-.logo {
-  color: white;
-  font-size: large;
+@media (max-width: 992px) {
+  nav {
+    padding: 0 60px;
+  }
 }
 
-ul.navbar-nav {
-  margin: auto;
+.store-logo {
+  width: 50px;
 }
 
 li.nav-item {
   margin-left: 20px;
+}
+
+.login-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.login-cart > a {
+  color: #fff;
+}
+.login-cart > a.active {
+  border-bottom: 2px solid white;
+  color: #f0f2f5;
+}
+
+.login-cart svg {
+  margin-right: 20px;
+  font-size: 1.5rem;
 }
 
 /* Login Page  */
