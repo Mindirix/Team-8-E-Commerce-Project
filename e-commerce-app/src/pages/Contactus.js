@@ -6,11 +6,11 @@ const Contactus = () => {
     <Contact>
       <main>
         <article>
-          <div class="container">
+          <div className="container">
             <form action="">
               <h1>Contact Us</h1>
-              <div class="form-content">
-                <label for="name">Full Name *</label>
+              <div className="form-content">
+                <label htmlFor="name">Full Name *</label>
                 <input
                   id="name"
                   type="text"
@@ -19,9 +19,9 @@ const Contactus = () => {
                   required
                 />
               </div>
-              <div class="row">
-                <div class="form-content">
-                  <label for="email">Email *</label>
+              <div className="row">
+                <div className="form-content">
+                  <label htmlFor="email">Email *</label>
                   <input
                     id="email"
                     type="email"
@@ -30,8 +30,8 @@ const Contactus = () => {
                     required
                   />
                 </div>
-                <div class="form-content">
-                  <label for="phone">Phone</label>
+                <div className="form-content">
+                  <label htmlFor="phone">Phone</label>
                   <input
                     type="tel"
                     id="phone"
@@ -40,8 +40,8 @@ const Contactus = () => {
                   />
                 </div>
               </div>
-              <div class="form-content textarea">
-                <label for="message">Message</label>
+              <div className="form-content textarea">
+                <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -50,9 +50,9 @@ const Contactus = () => {
                   rows="10"
                 ></textarea>
               </div>
-              <div class="submit-btn">
+              <div className="submit-btn">
                 <button type="submit" id="submit">
-                  Submit <i class="fa-solid fa-arrow-right-long"></i>
+                  Submit <i className="fa-solid fa-arrow-right-long"></i>
                 </button>
               </div>
             </form>
