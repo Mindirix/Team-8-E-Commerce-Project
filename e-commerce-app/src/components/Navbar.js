@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/shopping-bags-svgrepo-com.svg";
 import styled from "styled-components";
-import { FaShoppingCart } from "react-icons/fa";
+import CartButtons from "./CartButtons";
 
 const Navbar = () => {
   const [collapseMenu, setCollapseMenu] = useState(true);
@@ -57,9 +57,7 @@ const Navbar = () => {
             </ul>
           </NavbarStyle>
           <div className="login-cart">
-            <NavLink to="/cart" className="cart-logo">
-              <FaShoppingCart />
-            </NavLink>
+            <CartButtons />
             <NavLink className={`nav-link`} to={"/login"}>
               Login
             </NavLink>
@@ -76,6 +74,15 @@ const NavbarStyle = styled.nav`
     grid-template-columns: repeat(4, 1fr);
     margin-left: 70px;
   }
+
+  @media (max-width: 992px) {
+    ul {
+      grid-template-columns: 1fr;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
   a {
     text-transform: capitalize;
     &:hover {

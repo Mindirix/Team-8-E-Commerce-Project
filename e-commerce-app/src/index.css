@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;900&family=Poppins&display=swap");
+
 *,
 ::after,
 ::before {
@@ -33,6 +35,12 @@ nav {
     padding: 0 60px;
   }
 }
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .store-logo {
   width: 50px;
@@ -62,10 +70,6 @@ li.nav-item {
   font-size: 1.5rem;
 }
 
-.cart-logo {
-  padding: 8px;
-}
-
 /* Login Page  */
 .login-logo {
   text-align: center;
@@ -84,6 +88,10 @@ li.nav-item {
   -moz-box-shadow: 0px 1px 36px -7px rgba(0, 0, 0, 0.38);
   padding: 40px;
   border-radius: 30px;
+}
+
+.cart-logo {
+  padding: 8px;
 }
 
 .btn-link {
