@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;900&family=Poppins&display=swap");
+
 *,
 ::after,
 ::before {
@@ -17,25 +19,63 @@ section {
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  nav {
+    padding: 0 60px;
+  }
+}
+
 /* Navbar */
 nav {
-  padding: 100px;
+  padding: 0 200px;
 }
 
-.logo {
-  color: white;
-  font-size: large;
+@media (max-width: 992px) {
+  nav {
+    padding: 0 60px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
-ul.navbar-nav {
-  margin: auto;
+.store-logo {
+  width: 50px;
 }
 
 li.nav-item {
   margin-left: 20px;
 }
 
+.login-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.login-cart > a {
+  color: #fff;
+}
+.login-cart > a.active {
+  border-bottom: 2px solid white;
+  color: #f0f2f5;
+}
+
+.login-cart svg {
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
 /* Login Page  */
+.login-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .login-card {
   padding-top: 6rem;
 }
@@ -48,6 +88,10 @@ li.nav-item {
   -moz-box-shadow: 0px 1px 36px -7px rgba(0, 0, 0, 0.38);
   padding: 40px;
   border-radius: 30px;
+}
+
+.cart-logo {
+  padding: 8px;
 }
 
 .btn-link {

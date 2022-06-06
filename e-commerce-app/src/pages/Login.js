@@ -1,5 +1,6 @@
 import React from "react";
-import { FaFacebook, FaGoogle, FaTwitter, FaInstagram } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import logo from "../assets/shopping-bags-svgrepo-com.svg";
 
 const Login = () => {
   return (
@@ -7,40 +8,10 @@ const Login = () => {
       <article className="login container">
         <div className="tab-content">
           <div className="tab-pane fade show active">
+            <div className="login-logo">
+              <img src={logo} alt="store-logo" width={100} />
+            </div>
             <form>
-              <div className="text-center mb-3">
-                <p>Sign in with:</p>
-                <button
-                  type="button"
-                  className="btn btn-link-dark btn-floating mx-1"
-                >
-                  <FaFacebook />
-                </button>
-
-                <button
-                  type="button"
-                  className="btn btn-link-dark btn-floating mx-1"
-                >
-                  <FaGoogle />
-                </button>
-
-                <button
-                  type="button"
-                  className="btn btn-link-dark btn-floating mx-1"
-                >
-                  <FaTwitter />
-                </button>
-
-                <button
-                  type="button"
-                  className="btn btn-link-dark btn-floating mx-1"
-                >
-                  <FaInstagram />
-                </button>
-              </div>
-
-              <p className="text-center">or:</p>
-
               <div className="form-outline mb-4">
                 <input type="email" id="loginName" className="form-control" />
                 <label className="form-label" htmlFor="loginName">
@@ -89,9 +60,9 @@ const Login = () => {
               <div className="text-center">
                 <p>
                   Not a member?
-                  <button type="button" className="btn btn-link">
+                  <NavLink className={"btn btn-link"} to={"/register"}>
                     Register
-                  </button>
+                  </NavLink>
                 </p>
               </div>
             </form>

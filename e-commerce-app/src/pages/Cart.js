@@ -1,11 +1,11 @@
 import React from "react";
 
-const Menu = () => {
+const Cart = () => {
   return (
     <section className="section-center">
-      <h1>Menu Page</h1>
+      <h1>Cart Page</h1>
     </section>
   );
 };
 
-export default Menu;
+export default Cart;
