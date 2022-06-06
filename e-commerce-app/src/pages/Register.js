@@ -38,7 +38,7 @@ const Register = () => {
                   className="form-control"
                 />
                 <label className="form-label" htmlFor="loginPassword">
-                  Password
+                Confirm Password
                 </label>
               </div>
 
