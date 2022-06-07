@@ -2,10 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/shopping-bags-svgrepo-com.svg";
 
+
 const Register = () => {
   return (
     <section className="section-center">
-      
       <article className="login container">
         <div className="tab-content">
           <div className="tab-pane fade show active">
