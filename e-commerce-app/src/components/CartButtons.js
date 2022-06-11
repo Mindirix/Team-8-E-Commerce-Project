@@ -13,7 +13,7 @@ const CartButtons = () => {
           </span>
         </Link>
       </div>
-      <div className="value">7</div>
+      {/* <div className="value">7</div> */}
     </CartButton>
   );
 };
@@ -23,11 +23,14 @@ const CartButton = styled.div`
     color: white;
   }
 
-  .cart-button {
+  ${
+    "" /* .cart-button {
     position: relative;
+  } */
   }
 
-  .value {
+  ${
+    "" /* .value {
     color: white;
     position: absolute;
     background-color: red;
@@ -35,6 +38,7 @@ const CartButton = styled.div`
     border-radius: 50%;
     top: 5px;
     display: none;
+  } */
   }
 
   @media (min-width: 992px) {
