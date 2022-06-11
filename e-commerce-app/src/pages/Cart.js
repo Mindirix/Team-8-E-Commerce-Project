@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Data from "../data";
+import React from "react";
 import CartItem from "../components/CartItem";
 import { useGlobalContext } from "../context/Context";
 

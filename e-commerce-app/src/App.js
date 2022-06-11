@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Menu from "./pages/Menu";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

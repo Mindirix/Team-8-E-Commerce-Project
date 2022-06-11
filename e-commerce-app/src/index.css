@@ -12,7 +12,7 @@
 section {
   background-color: #f0f2f5;
   padding-top: 6rem;
-  height: 100vh;
+  height: 105vh;
 }
 
 .section-center {
@@ -201,4 +201,18 @@ li.nav-item {
   width: 60%;
   margin: 20px auto;
   border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+footer h3,
+footer p {
+  margin: 0 auto;
 }
