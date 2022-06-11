@@ -34,6 +34,9 @@ nav {
   nav {
     padding: 0 60px;
   }
+  .cart-amount {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -55,6 +58,7 @@ li.nav-item {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .login-cart > a {
@@ -68,6 +72,17 @@ li.nav-item {
 .login-cart svg {
   margin-right: 20px;
   font-size: 1.5rem;
+}
+
+.cart-amount {
+  position: absolute;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  top: 0;
+  right: 60%;
 }
 
 /* Login Page  */
@@ -97,4 +112,93 @@ li.nav-item {
 .btn-link {
   padding-top: 0;
   border-top: 0;
+}
+
+/* Cart Style */
+.item button {
+  background-color: transparent;
+  border: none;
+}
+
+.cart-header {
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.cart-container {
+  margin: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #a7a9aa;
+  border-bottom: 2px solid #a7a9aa;
+  padding: 2rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  width: 90%;
+  margin: 10px;
+}
+
+.item img {
+  width: 90px;
+  text-align: right;
+}
+
+.item p {
+  margin-bottom: 0;
+}
+
+.item-info {
+  text-align: left;
+}
+
+.item-info h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.remove {
+  color: rgb(255, 139, 139);
+  text-transform: uppercase;
+}
+
+.amount {
+  align-self: center;
+}
+
+.amount p {
+  font-size: lrem;
+}
+
+.amount button {
+  color: rgb(233, 147, 89);
+}
+
+.total {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 6rem 0;
+}
+
+.total .text {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.total .price {
+  font-weight: bold;
+}
+
+.checkout {
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 10px;
 }

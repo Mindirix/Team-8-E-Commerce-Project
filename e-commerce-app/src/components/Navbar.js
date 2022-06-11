@@ -3,9 +3,11 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/shopping-bags-svgrepo-com.svg";
 import styled from "styled-components";
 import CartButtons from "./CartButtons";
+import { useGlobalContext } from "../context/Context";
 
 const Navbar = () => {
   const [collapseMenu, setCollapseMenu] = useState(true);
+  const { amount } = useGlobalContext();
 
   function handleCollapse() {
     setCollapseMenu(!collapseMenu);
@@ -58,6 +60,7 @@ const Navbar = () => {
           </NavbarStyle>
           <div className="login-cart">
             <CartButtons />
+            <span className="cart-amount">{amount}</span>
             <NavLink className={`nav-link`} to={"/login"}>
               Login
             </NavLink>
