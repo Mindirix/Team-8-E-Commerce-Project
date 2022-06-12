@@ -16,7 +16,7 @@ const Register = () => {
               <div className="form-outline mb-4">
                 <input type="email" id="loginName" className="form-control" />
                 <label className="form-label" htmlFor="loginName">
-                  Email or username
+                  Email
                 </label>
               </div>
 
