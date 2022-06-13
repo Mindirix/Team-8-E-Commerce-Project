@@ -199,7 +199,7 @@ const Contact = styled.main`
     transition: all 0.6s ease-in-out;
   }
   .submit-btn button:hover {
-    background-color: #00ad5f;
+    background-color: #f96a05;
     cursor: pointer;
   }
 
