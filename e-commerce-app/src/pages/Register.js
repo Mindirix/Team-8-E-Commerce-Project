@@ -13,20 +13,28 @@ const Register = () => {
               <img src={logo} alt="store-logo" width={100} />
             </div>
             <form>
+
+            <div className="form-outline mb-4">
+                <input type="name" id="RegisterName" className="form-control" />
+                <label className="form-label" htmlFor="RegisterName">
+                  Name
+                </label>
+              </div>
+
               <div className="form-outline mb-4">
-                <input type="email" id="loginName" className="form-control" />
-                <label className="form-label" htmlFor="loginName">
-                  Email or username
+                <input type="email" id="loginEmail" className="form-control" />
+                <label className="form-label" htmlFor="loginEmail">
+                  Email
                 </label>
               </div>
 
               <div className="form-outline mb-4">
                 <input
                   type="password"
-                  id="loginPassword"
+                  id="RegisterPassword"
                   className="form-control"
                 />
-                <label className="form-label" htmlFor="loginPassword">
+                <label className="form-label" htmlFor="RegisterPassword">
                   Password
                 </label>
               </div>
@@ -34,10 +42,10 @@ const Register = () => {
               <div className="form-outline mb-4">
                 <input
                   type="password"
-                  id="loginPassword"
+                  id="RegisterPassword"
                   className="form-control"
                 />
-                <label className="form-label" htmlFor="loginPassword">
+                <label className="form-label" htmlFor="RegisterPassword">
                 Confirm Password
                 </label>
               </div>
