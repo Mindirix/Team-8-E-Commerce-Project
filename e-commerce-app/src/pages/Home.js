@@ -10,7 +10,7 @@ const Home = () => {
         <article className="hero-section">
           <img
             className="hero-img"
-            src="https://images.pexels.com/photos/1078973/pexels-photo-1078973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://www.moodiedavittreport.com/wp-content/uploads/2020/03/Unifree-arrivals-elec-extra-1024x768.jpg"
             alt="store"
           />
           <h1 className="title">
