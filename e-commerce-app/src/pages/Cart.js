@@ -1,6 +1,6 @@
 import React from "react";
 import CartItem from "../components/CartItem";
-import { useGlobalContext } from "../context/Context";
+import { useGlobalContext } from "../context/cart_context";
 
 const Cart = () => {
   const { cart, total } = useGlobalContext();

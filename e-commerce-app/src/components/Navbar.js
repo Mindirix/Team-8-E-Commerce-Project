@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/shopping-bags-svgrepo-com.svg";
 import styled from "styled-components";
 import CartButtons from "./CartButtons";
-import { useGlobalContext } from "../context/Context";
+import { useGlobalContext } from "../context/cart_context";
 
 const Navbar = () => {
   const [collapseMenu, setCollapseMenu] = useState(true);

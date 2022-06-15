@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { TbTruckDelivery, TbWorld } from "react-icons/tb";
 import { AiOutlineDollar } from "react-icons/ai";
 import Reviews from "../components/Review";
@@ -10,7 +11,7 @@ const Home = () => {
         <article className="hero-section">
           <img
             className="hero-img"
-            src="https://www.moodiedavittreport.com/wp-content/uploads/2020/03/Unifree-arrivals-elec-extra-1024x768.jpg"
+            src="https://static.thehoneycombers.com/wp-content/uploads/sites/2/2021/09/Online-furniture-Singapore-900x643.png"
             alt="store"
           />
           <h1 className="title">
@@ -21,9 +22,11 @@ const Home = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
               dolore ipsa repellat repudiandae veniam ab.
             </p>
-            <button type="button" className="start-btn">
-              Let's start
-            </button>
+            <Link to="/products">
+              <button to="/products" className="start-btn">
+                Let's start
+              </button>
+            </Link>
           </div>
         </article>
       </header>

@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import { ProductContext } from "./context/Context";
+import { ProductContext } from "./context/cart_context";
 import "./index.css";
 
 const container = document.getElementById("root");
