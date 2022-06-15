@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { TbTruckDelivery, TbWorld } from "react-icons/tb";
 import { AiOutlineDollar } from "react-icons/ai";
 import Reviews from "../components/Review";
@@ -21,9 +22,11 @@ const Home = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam
               dolore ipsa repellat repudiandae veniam ab.
             </p>
-            <button type="button" className="start-btn">
-              Let's start
-            </button>
+            <Link to="/products">
+              <button to="/products" className="start-btn">
+                Let's start
+              </button>
+            </Link>
           </div>
         </article>
       </header>
