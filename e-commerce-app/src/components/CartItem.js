@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaAngleUp, FaAngleDown } from "react-icons/fa";
-import { useGlobalContext } from "../context/Context";
+import { useGlobalContext } from "../context/cart_context";
 
 const CartItem = ({ id, img, title, price, amount }) => {
   const { remove, increase, decrease } = useGlobalContext();
