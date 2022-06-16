@@ -11,7 +11,9 @@ const store = new TheProductStore()
 const getAllProducts= async (_req: Request, res: Response) => {
     try {
         const products = await store.index()
-            res.json(products)
+        res.header({'Access-Control-Expose-Headers' :'Content-Range'})
+        res.header({'Content-Range':'bytes:0-5756/*'})
+        res.json(products)
     } catch(err) { 
          res.status(400)
          res.json(err)
