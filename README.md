@@ -39,6 +39,16 @@ npm start
 ```
 ### Back-End Server
 
+* navigate to (Team-8-E-Commerce-Project/e-commerce-api)  and create Environment variables (.env) file with these parameters :
+
+```
+MONGO_URL="mongodb://localhost:27017/e_commerce_app"
+SALT_ROUNDS=10
+PEPPER="this-is-a-pepper"
+BCRYPT_PASSWORD="speak-friend-from-the-other-side-and-enter"
+TOKEN_SECRET="alohomora123!"
+```
+
 * run MongoDB server
 
     navigate to where you installed MongoDB and run
@@ -47,7 +57,6 @@ npm start
     mongod
     ```
     or you can use the gui called [MongoDB Compass](https://www.mongodb.com/products/compass)
-
 
 
 * install back-end dependencies and start the server

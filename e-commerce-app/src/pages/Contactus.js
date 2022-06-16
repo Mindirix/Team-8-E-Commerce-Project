@@ -203,10 +203,15 @@ const Contact = styled.main`
     cursor: pointer;
   }
 
-  @media (max-width: 750px) {
+  @media screen and (max-width: 750px) {
     .row {
+      width: 100%;
       flex-direction: column;
       gap: 0;
+    }
+    .article {
+      width: 100%;
+      flex-direction: column;
     }
   }
 `;
