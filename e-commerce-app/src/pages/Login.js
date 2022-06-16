@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
+//import axios from "axios";
 import logo from "../assets/shopping-bags-svgrepo-com.svg";
 
 const Login = () => {
