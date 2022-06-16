@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;900&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;900&family=Poppins&display=swap&family=Josefin+Sans:400,700");
 
 *,
 ::after,
@@ -418,3 +418,163 @@ select {
 .product-price {
   color: #f96a05;
 }
+
+
+/* about us css */
+
+ 
+  /* card */
+  body a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .card {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    perspective: 600px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    border-radius: 20px;
+  }
+
+  .card-front {
+    height: 100%;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .card1{
+    background-image: url(./assets/images/Jack-Marshall.jpg);
+  }
+
+  .card2{
+    background-image: url(./assets/images/Andrew-Redwood.jpg);
+  }
+
+  .card3{
+    background-image: url(./assets/images/John-Thomason.jpg);
+  }
+  
+ 
+
+
+  .column {
+    margin-bottom: 16px;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+ 
+  .about-section {
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .title {
+    color: grey;
+  }
+  
+
+  #about-us{
+
+    color: #fff;
+		font-size: 92px;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: "Josefin Sans", sans-serif;
+		background: radial-gradient(circle, rgb(219, 136, 19) 50%,rgb(253, 29, 29) 100%);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff;
+		background-clip: text;
+		background-clip: text;
+		color: transparent;
+		animation: textclip 4s linear infinite;
+		display: inline-block;
+  }
+
+  #team-names{
+    color: #000000;
+  }
+  
+  p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size:18px;
+    color: #000000;
+  }
+  
+  .header {
+    position:relative;
+    text-align:center;
+    color:white;
+  }
+
+
+  #info{
+    color: #000000;
+  }
+
+
+
+  h2{
+    text-align:center;
+    font-size: 2em;
+  }
+
+ #our-team{
+    text-align: center;
+    font-size: 3em;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  .about-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+
+  /* about us animation */
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  /* end of about us animation */
+
+  /* media Query */
+  @media screen and (max-width: 750px) {
+    .column {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:4em;
+    }
+    .header .about-icons{
+      width: 100%;
+      flex-direction: column;
+    }
+    .card{
+      margin-bottom: 15px;
+    }
+  }
+/* end of card */
+
+/* end of about us css */
