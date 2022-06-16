@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Contactus from "./pages/Contactus";
 import Login from "./pages/Login";
 import Products from "./pages/Products";
+import SingleProduct from "./pages/SingleProduct";
+import Error from "./pages/Error";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
 import Footer from "./components/Footer";
@@ -20,10 +22,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/products/:productId" element={<SingleProduct />} />
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>
