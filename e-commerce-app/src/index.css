@@ -345,7 +345,7 @@ footer p {
   margin: 0 auto;
 }
 
-/* Product Component */
+/* Products Page */
 .products-header {
   display: flex;
   justify-content: space-between;
@@ -378,13 +378,15 @@ select {
   gap: 2rem;
 }
 
+/* Product Card */
 .product-container {
   width: 100%;
   max-width: 500px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   background-color: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   transition: all linear 0.1s;
+  border-radius: 10px;
 }
 
 .product-container:hover {
@@ -411,4 +413,8 @@ select {
   margin-bottom: 0;
   text-transform: capitalize;
   align-self: center;
+}
+
+.product-price {
+  color: #f96a05;
 }
