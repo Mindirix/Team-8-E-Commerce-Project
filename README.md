@@ -1,7 +1,7 @@
 # Team-8 E-Commerce Project
 Team-8 E-Commerce Project for egFWD & Sprints industry exposure program
 
-##This Project is NOT working as intended and needs some fixes.
+# This Project is NOT working as intended and needs some fixes.
 
 You can check the live demo [Here](https://sprints-ecommerce-project.netlify.app/)
 
