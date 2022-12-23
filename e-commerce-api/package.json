@@ -39,7 +39,7 @@
     "jasmine": "^3.10.0",
     "jasmine-spec-reporter": "^7.0.0",
     "jasmine-ts": "^0.4.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.3.5",
     "nodemon": "^2.0.16",
     "supertest": "^6.1.6",
