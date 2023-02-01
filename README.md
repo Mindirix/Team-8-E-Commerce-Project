@@ -1,4 +1,3 @@
-# This Project is NOT working as intended and needs some fixes.
 
 # Team-8 E-Commerce Project
 Team-8 E-Commerce Project for egFWD & Sprints industry exposure program
